@@ -7,7 +7,7 @@
  * 0 if character is zero
  *-1 if character is less than zero
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 	if (n <= 0)
 	{

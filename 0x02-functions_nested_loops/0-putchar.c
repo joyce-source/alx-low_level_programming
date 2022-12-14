@@ -1,4 +1,4 @@
-#include "main.j"
+#include "main.h"
 
 /**
  * main -print _putchar with a new line

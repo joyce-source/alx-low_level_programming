@@ -1,16 +1,16 @@
 #include "main.h"
 /**
- * print_alphabet_x10 -Entry point
+ *void print_alphabet_x10 -Entry point
  *
  * Return 0
  */
 void print_alphabet_x10(void)
 {
-char w = 0, j;
+char w =0;
 
 	while (w <= 10)
 	{
-		j = 'a'
+		j = 'a';
 		while (j <= 'z')
 
 		{

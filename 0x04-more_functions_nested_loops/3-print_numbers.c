@@ -6,9 +6,9 @@
  */
 void print_numbers(void)
 {
-	char r;
+	int r;
 
-	for (r = '0'; r <= '9'; r++)
+	for (r = 48; r < 58; r++)
 	{
 		_putchar(r);
 	}

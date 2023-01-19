@@ -1,4 +1,4 @@
-include "function_pointers.h"
+#include "function_pointers.h"
 #include <stdio.h>
 /**
  * array_iterator - prints each array elem on a newl
@@ -8,7 +8,7 @@ include "function_pointers.h"
  * Return: void
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+void array_iterator(int *array,size_t size, void (*action)(int))
 {
 	unsigned int i;
 

@@ -26,14 +26,15 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 	/* Find the node before the one to be deleted */
 	for (i = 0; i < index - 1 && current != NULL; i++)
 		current = current->next;
-	if (current == NULL || current->next == NULL
-			/* If index is greater than the number of nodes */
-			return (-1);
-			/* Delete the node at index */
-			temp = current->next;
-			current->next = temp->next;
-			if (temp->next != NULL)
-			temp->next->prev = current;
-			free(temp);
-			return (1);
+	if (current == NULL || current->next == NULL)
+
+	/* If index is greater than the number of nodes */
+	return (-1);
+	/* Delete the node at index */
+	temp = current->next;
+	current->next = temp->next;
+	if (temp->next != NULL)
+		temp->next->prev = current;
+	free(temp);
+	return (1);
 }

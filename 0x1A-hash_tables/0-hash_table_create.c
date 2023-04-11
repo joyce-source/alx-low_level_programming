@@ -1,4 +1,5 @@
 #include "hash_table.h"
+#include <stdlib.h>
 
 /**
 * where size is the size of the array

@@ -1,5 +1,5 @@
 #include "hash_tables.h"
-#include <stdlib.h>
+
 
 /**
 * hash_table_create - function creates new hash table with an array of nodes.

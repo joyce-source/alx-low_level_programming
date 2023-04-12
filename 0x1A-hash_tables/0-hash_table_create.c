@@ -1,4 +1,4 @@
-#include "hash_table.h"
+#include "hash_tables.h"
 #include <stdlib.h>
 
 /**
@@ -14,11 +14,11 @@ if (table == NULL)
 return NULL;
 }
 table->size = size;
-table->items = calloc(size, sizeof(hash_table_item_t));
-if (table->items == NULL)
+table->array = calloc(size, sizeof(hash_table_t));
+if (table->array == NULL)
 {
 free(table);
-return NULL; // error: could not allocate memory for the items array
+return NULL; /*error: could not allocate memory for the items array*/
 }
 return table;
 }
